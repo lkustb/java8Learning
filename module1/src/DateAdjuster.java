@@ -1,5 +1,6 @@
 import javax.xml.bind.SchemaOutputResolver;
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Set;
@@ -47,5 +48,13 @@ public class DateAdjuster {
         System.out.println("nextMetting : " + nextMetting);
 
         System.out.println("nextMettingUS : " + nextMettingUS);
+
+
+        System.out.println(DateTimeFormatter.BASIC_ISO_DATE.format(nextMettingUS));
+
+        System.out.println(DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(nextMettingUS));
+
+
+
     }
 }
